@@ -1,14 +1,15 @@
-
+import BusinessCard from './components/businessCard';
 import './App.css'
 
 function App() {
 
 
-  return (
-    <div>
-
-    </div>
-  )
+  return (<>
+    <><BusinessCard /></>
+    <><BusinessCard /></>
+  </>
+  );
 }
 
 export default App
+
