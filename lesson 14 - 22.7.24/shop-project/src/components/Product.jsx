@@ -1,6 +1,7 @@
 import Counter from "./Counter";
 
 function Product({
+  onChange,
   product: {
     id,
     title,
@@ -29,8 +30,16 @@ function Product({
             {price}$
           </span>
           <span className="ms-4 fs-1">{discountedPrice}$</span>
-
-          <Counter />
+          {instock ? (
+            <Counter
+              value={quantitiy}
+              onChange={onChange}
+              min={0}
+              max={instock}
+            />
+          ) : (
+            <div>out of stock</div>
+          )}
         </div>
       </div>
     </div>
