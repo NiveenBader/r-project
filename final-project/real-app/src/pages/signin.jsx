@@ -1,10 +1,13 @@
+import { useState } from "react";
 import PageHeader from "../components/common/pageHeader";
-import Logo from "../components/logo";
+import Form from "../_tutorials/form";
 
 function SignIn() {
   return (
     <div className="container">
-      <PageHeader title="Sing In" description="Sign In Here!" />
+      <PageHeader title="Sign In" description="sign in with your account" />
+
+      <Form />
     </div>
   );
 }
